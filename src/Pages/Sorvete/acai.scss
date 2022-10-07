@@ -1,0 +1,44 @@
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: antiquewhite;
+    flex-direction: column;
+    
+
+        
+    
+    .container1{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 13em;
+        height: 19em;
+        background-color: aliceblue;
+
+        .botao{
+            padding: 0.4em;
+            background-color: rgb(47, 157, 181);
+            color: white;
+            border-radius: 10px;
+            border: none;
+            margin-top: 2em;
+
+        }
+       
+    }
+    .voltar{
+        text-decoration: none;
+        padding: 0.3em;
+        border-radius: 10px;
+        border: none;
+        color: black;
+    }
+    .voltar:hover{
+        font-size: 1.3em;
+        text-decoration: underline;
+    }
+
+}

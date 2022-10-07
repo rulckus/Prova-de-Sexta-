@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.153);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(26, 188, 213);
+        width: 20vw;
+        height: 90vh;
+        border-radius: 10px;
+
+        input{
+            padding: 0.5em;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .buton{
+
+            margin-top: 2em;
+            .botao{
+                padding: 0.4em;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+
+            }
+        }
+        .volta{
+            text-decoration: none;
+            padding: 0.3em;
+            border-radius: 10px;
+            border: none;
+        }
+        .link{
+            text-decoration: none;
+        }
+    }
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

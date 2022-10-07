@@ -1,0 +1,40 @@
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: rgb(153, 56, 157);
+    flex-direction: column;
+    .container2{
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 13em;
+        height: 24em;
+        background-color: rgb(171, 91, 145);
+
+        input{
+            padding: 0.5em;
+            border: none;
+            border-radius: 10px;
+        }
+        
+
+        .botao2{
+            padding: 0.4em;
+            background-color: rgb(97, 90, 90);
+            color: white;
+            border-radius: 10px;
+            border:none;
+            margin-top: 2em;
+        }
+        .voltar{
+            text-decoration: none;
+            padding: 0.3em;
+            border-radius: 10px;
+            border: 1px solid black;
+            color: black;
+        }
+    }
+}
