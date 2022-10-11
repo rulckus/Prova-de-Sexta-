@@ -33,4 +33,36 @@ export function Açai(qtdPeq, qtdMed, qtdGra, desc){
     return total-desconto
 }
 
-console.log(Açai(1,1,1,50))
+export function salario(salario, bonus,desc){
+    let total = salario + ((salario/100) * bonus);
+    let final = total - desc;
+    return final
+}
+
+
+export function paradas(capac, consumo, dist) {
+    let a = dist/consumo;
+    let b = a/capac
+    return Math.ceil(b);
+}
+
+
+export function Temperatura(graus){
+    let msg=''
+    if (graus>=41) {
+        msg= 'Hipertermia'
+    }
+    else if(graus>=39.6&&graus<41){
+        msg= 'Febre Alta'
+    }
+    else if(graus>=37.6&&graus<39.6){
+        msg="Febre"
+    }
+    else if(graus>=36&&graus<37.6){
+        msg="Normal"
+    }
+    else{
+        msg="Hipotermia"
+    }
+    return msg; 
+}
