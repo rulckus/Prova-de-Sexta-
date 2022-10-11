@@ -15,6 +15,12 @@ export default function Index(){
     function calcular(){
         const r= Açai(peq, med, gra, desc)
         setResp(r)
+        if(desc<0){
+            setResp('Desconto negativo não pode')
+        }
+        if(peq<0||med<0||gra<0){
+            setResp('Valores negativos não pode')
+        }
     }
     
     return(

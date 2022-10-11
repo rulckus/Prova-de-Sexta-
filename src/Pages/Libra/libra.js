@@ -12,8 +12,18 @@ export default function Index() {
 
     function testar() {
         const r= Libra(mes, dia)
-        setTeste(r)
-        retorno()
+            setTeste(r)
+            retorno()
+        if(dia<=0||dia>31){
+            setResp('Dia inválido')
+        }    
+        if(!dia){
+            setResp('Insira o dia')
+        }    
+        if(!mes){
+            setResp('Insira o Mês')
+        }
+       
     }
     function retorno() {
 
