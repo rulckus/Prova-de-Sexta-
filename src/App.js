@@ -12,6 +12,9 @@ function App() {
         <Link className='link' to='temperatura'>Temperatura</Link>
         <Link className='link' to='cinema'>Cinema</Link>
         <Link className='link' to='orcamento'>Orçamento</Link>
+        <Link className='link' to='contagem'>Contagem</Link>
+        <Link className='link' to='linha'>Linha</Link>
+        <Link className='link' to='retangulo'>Retangulo</Link>
     </div>
   );
 }

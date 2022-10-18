@@ -10,6 +10,9 @@ import Paradas from './Pages/Paradas/paradas'
 import Temperatura from './Pages/Temperatura/temperatura'
 import Cinema from './Pages/Cinema/cinema'
 import Orçamento from './Pages/Orçamento/orcamento'
+import IniFim from './Pages/IniFim/index'
+import Linha from './Pages/Linha/linha'
+import Retangulo from './Pages/Retangulo/retangulo'
 
 export default function Paths() {
     return (
@@ -24,6 +27,9 @@ export default function Paths() {
               <Route exact path="/temperatura" element={<Temperatura/>}></Route>
               <Route exact path="/cinema" element={<Cinema/>}></Route>
               <Route exact path="/orcamento" element={<Orçamento/>}></Route>
+              <Route exact path="/contagem" element={<IniFim/>}></Route>
+              <Route exact path="/linha" element={<Linha/>}></Route>
+              <Route exact path="/retangulo" element={<Retangulo/>}></Route>
 
           </Routes>
       </BrowserRouter>

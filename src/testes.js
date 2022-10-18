@@ -37,5 +37,42 @@ function sitOrcamento(ganhos, gastos) {
     }
     return msg
 }
-console.log(sitOrcamento(3000,6100))
 
+
+function IniFim(inicio, fim) {
+    let array = [];
+    let e=0 
+    
+    for (let i = inicio; i <= fim; i++ ) {
+          array[e] = i;
+          e++  
+          
+    }
+    return array
+    
+}
+
+function Linha(numero){
+    let array=[];
+    for (let i = 0; i < numero; i++) {
+        array[i] = "*"
+        
+    }
+    return array
+}
+
+function retangulo(base, altura) {
+    let matriz = [];
+        let array =[];
+
+        for (let i = 0; i < base; i++) {
+            array[i] = "*";   
+            
+            for (let j = 0; j < altura; j++) {
+                matriz[j] = new Array (array);
+            }
+        }
+        return matriz
+}
+
+console.log(retangulo(4,2))
