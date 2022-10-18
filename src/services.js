@@ -140,3 +140,32 @@ export function retangulo(base, altura) {
         }
         return matriz
 }
+
+export function retangulo2(base, altura) {
+    let matriz = [];
+        let array =[];
+
+        for (let i = 0; i < base; i++) {
+            array[i] = "⚫";   
+            
+            for (let j = 0; j < altura; j++) {
+                matriz[j] = new Array (array);
+            }
+        }
+        return matriz
+}
+
+export function retangulo3(base, altura) {
+    let matriz = [];
+        let array =[];
+
+        for (let i = 0; i < base; i++) {
+            array[i] = "⬛";   
+            
+            for (let j = 0; j < altura; j++) {
+                matriz[j] = new Array (array);
+            }
+        }
+        return matriz
+}
+
