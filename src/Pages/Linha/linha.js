@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { Linha } from "../../services";
+import '../../common.scss'
+import { Link } from "react-router-dom";
 
 export default function Index(){
 
@@ -16,12 +18,13 @@ export default function Index(){
     }
 
     return(
-        <div>
+        <main>
+            <Link className="Link" to='/'>Voltar</Link>
             <p>Tamanho</p>
             <input value={num} type="number" onChange={e=> setNum(e.target.value)}/>
             <button onClick={click}>Mostrar</button>
             {Erro}
             <p>{resp}</p>
-        </div>
+        </main>
     )
 }

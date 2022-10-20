@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { Temperatura } from "../../services";
+import '../../common.scss'
+import { Link } from "react-router-dom";
 
 
 export default function Index(){
@@ -13,13 +15,14 @@ export default function Index(){
     }
     
     return(
-        <div>
+        <main>
+            <Link className="Link" to='/'>Voltar</Link>
             <h1>Temperatura</h1>
-            <h1>Quantos Graus?</h1>
+            <p>Quantos Graus?</p>
             <input value={graus} type="number" onChange={e => setGraus(e.target.value)}/>
 
             <button onClick={click}>Ver</button>
             <p>A situação para sua temperatura é {resp}</p>
-        </div>
+        </main>
     )
 }

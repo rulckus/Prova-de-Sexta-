@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Libra } from "../../services";
 import './libra.scss'
 import { Link } from 'react-router-dom';
+import '../../common.scss'
 
 export default function Index() {
     

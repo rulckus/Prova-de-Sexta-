@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Sorvete } from "../../services";
 import './acai.scss'
 import { Link } from 'react-router-dom';
+import '../../common.scss'
 
 
 export default function Index(){
@@ -16,7 +17,7 @@ export default function Index(){
 
     return(
         <main className="main1">
-            <Link className="voltar" to='/'>Voltar</Link>
+            <Link className="Link" to='/'>Voltar</Link>
             <div className="container1">
                 <h1 className="title">Sorvete</h1>
                 <p>Gramas</p>

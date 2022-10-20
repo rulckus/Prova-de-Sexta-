@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { totalCompra } from "../../services";
 import { Link } from "react-router-dom";
+import '../../common.scss'
 
 export default function  Index() {
 
@@ -28,7 +29,9 @@ export default function  Index() {
         <input value={mei} type="number" onChange={e => setMei(e.target.value)}/>
         <p>Dia da semana</p>
         <input value={day} type="text" onChange={e => setDay(e.target.value)}/>
+        <p>Nacional?</p>
         <input value={nac} type="checkbox" onChange={e => setNac(e.target.checked)}/>
+
         <button onClick={calcular}>Calcular</button>
         <p>O total a se pagar é {resp}</p>
     </main>

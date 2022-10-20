@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Açai } from "../../services";
 import { Link } from 'react-router-dom';
+import '../../common.scss'
 import './peso.scss'
 
 

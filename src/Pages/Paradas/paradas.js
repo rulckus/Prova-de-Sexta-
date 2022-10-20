@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { paradas } from "../../services";
+import '../../common.scss'
+import { Link } from "react-router-dom";
 
 export default function Index(){
 
@@ -31,7 +33,8 @@ export default function Index(){
     }
 
     return(
-        <div>
+        <main>
+            <Link className="Link" to='/'>Voltar</Link>
             <h1>Paradas</h1>
             <p>Capacidade do Tanque</p>
             <input value={capac} type="number" onChange={e =>setCapac(e.target.value)} />
@@ -43,6 +46,6 @@ export default function Index(){
             <button onClick={calc}>Calcular</button>
             <p>Você precisara fazer {resp} paradas para abastecer</p>
             {erro}
-        </div>
+        </main>
     )
 }

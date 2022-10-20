@@ -13,6 +13,7 @@ import Orçamento from './Pages/Orçamento/orcamento'
 import IniFim from './Pages/IniFim/index'
 import Linha from './Pages/Linha/linha'
 import Retangulo from './Pages/Retangulo/retangulo'
+import Café from './Pages/Café/index'
 
 export default function Paths() {
     return (
@@ -30,6 +31,7 @@ export default function Paths() {
               <Route exact path="/contagem" element={<IniFim/>}></Route>
               <Route exact path="/linha" element={<Linha/>}></Route>
               <Route exact path="/retangulo" element={<Retangulo/>}></Route>
+              <Route exact path="/cafe" element={<Café/>}></Route>
 
           </Routes>
       </BrowserRouter>

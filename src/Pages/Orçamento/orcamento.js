@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { sitOrcamento } from "../../services";
 import { Link } from "react-router-dom";
+import '../../common.scss'
 
 
 export default function Index(){
@@ -16,7 +17,7 @@ export default function Index(){
 
     return(
         <main>
-            <Link to='/'>Voltar</Link>
+            <Link className="Link" to='/'>Voltar</Link>
             <h1>Orçamento</h1>
             <p>Ganhos</p>
             <input value={ganhos} type="number" onChange={e => setGanhos(e.target.value)}/>

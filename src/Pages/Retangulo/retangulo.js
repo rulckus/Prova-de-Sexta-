@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { retangulo, retangulo2, retangulo3, retangulofoto } from "../../services";
+import '../../common.scss'
+import { Link } from "react-router-dom";
 
 export default function Index() {
 
@@ -30,7 +32,8 @@ export default function Index() {
     }
 
     return(
-        <div>
+        <main>
+            <Link className="Link" to='/'>Voltar</Link>
             <p>Base:</p>
             <input value={base} type="Number" onChange={e=> setBase(e.target.value)}/>
             <p>Altura:</p>
@@ -47,6 +50,6 @@ export default function Index() {
             {Erro}
 
             {resp.map(item => <p>{ item }</p>)}
-        </div>
+        </main>
     )
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import '../../common.scss'
+import { Link } from "react-router-dom";
 
 
 export default function SalarioLiquido() {
@@ -39,6 +41,7 @@ export default function SalarioLiquido() {
 
     return(
         <main>
+            <Link className="Link" to='/'>Voltar</Link>
             <h1>Calcular Salário Líquido</h1>
 
             <div>

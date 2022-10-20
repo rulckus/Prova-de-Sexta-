@@ -75,4 +75,15 @@ function retangulo(base, altura) {
         return matriz
 }
 
-console.log(retangulo(4,2))
+function Café(alunos, capac, mili){
+    let num = 1;
+    let x = (alunos * mili)/1000;
+    let j = capac * num;
+    while (j < x) {
+        num++;
+        j = capac * num
+    }
+    return j
+}
+
+console.log(Café(15,3,250))

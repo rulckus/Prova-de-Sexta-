@@ -169,3 +169,14 @@ export function retangulo3(base, altura) {
         return matriz
 }
 
+export function Café(alunos, capac, mili){
+    let num = 1;
+    let x = (alunos * mili)/1000;
+    let j = capac * num;
+    while (j < x) {
+        num++;
+        j = capac * num
+    }
+    return j
+}
+

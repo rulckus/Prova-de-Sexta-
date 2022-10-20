@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { IniFim } from "../../services";
+import '../../common.scss'
+import { Link } from "react-router-dom";
 
 export default function Index(){
 
@@ -21,7 +23,8 @@ export default function Index(){
     }
 
     return(
-        <div>
+        <main>
+            <Link className="Link" to='/'>Voltar</Link>
             <p>Início:</p>
             <input value={ini} type="number" onChange={e =>setIni(e.target.value)}/>
             <p>Fim:</p>
@@ -29,6 +32,6 @@ export default function Index(){
             <button onClick={clicar}>OK</button>
             <p>{resp}</p>
             {Erro}
-        </div>
+        </main>
     )
 }
