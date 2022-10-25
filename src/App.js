@@ -17,6 +17,7 @@ function App() {
         <Link className='link' to='retangulo'>Retangulo</Link>
         <Link className='link' to='cafe'>Café</Link>
         <Link className='link' to='juros'>Juros</Link>
+        <Link className='link' to='aluno'>Aluno</Link>
     </div>
   );
 }

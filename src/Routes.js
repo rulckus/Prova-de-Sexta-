@@ -15,6 +15,8 @@ import Linha from './Pages/Linha/linha'
 import Retangulo from './Pages/Retangulo/retangulo'
 import Café from './Pages/Café/index'
 import Juros from './Pages/Juros/index'
+import Alunos from './Pages/Alunos/index'
+
 
 export default function Paths() {
     return (
@@ -34,6 +36,7 @@ export default function Paths() {
               <Route exact path="/retangulo" element={<Retangulo/>}></Route>
               <Route exact path="/cafe" element={<Café/>}></Route>
               <Route exact path="/juros" element={<Juros/>}></Route>
+              <Route exact path="/aluno" element={<Alunos/>}></Route>
 
           </Routes>
       </BrowserRouter>

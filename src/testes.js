@@ -86,4 +86,14 @@ function Café(alunos, capac, mili){
     return j
 }
 
-console.log(Café(15,3,250))
+
+
+function Media(notas){
+    let somaNotas = 0;
+    for(let i = 0; i < notas.length; i++){
+        somaNotas += notas[i]
+    }
+    return somaNotas / notas.length
+}
+
+console.log(Media([3,4,2]))
